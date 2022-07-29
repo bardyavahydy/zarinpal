@@ -247,7 +247,7 @@ header .container{
 .container-img__insta img{
     /* width: 760px; */
     width: 100%;
-    height: 456px;
+    max-height: 456px;
 }
 
 .img-hover{
