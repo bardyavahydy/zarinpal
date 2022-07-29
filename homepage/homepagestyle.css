@@ -1,0 +1,1119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'iranyekanwebmedium',Arial, Helvetica, sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    background-color: rgb(255, 255, 255,.3);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 7px;
+    position: sticky;
+    top: -6px;
+    transition: .5s ease-out;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.menu-header > li{
+    margin-right: 35px;
+}
+
+.menu-header a{
+    color: #303030;
+    font: 14px 'YekanBakhMedium';
+}
+
+.fa-angle-down{
+    color: #303030;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.myzarinpal{
+    display: block;
+    color: #28457b;
+    background-color: rgba(232,239,254,.6);
+    padding: 10px 27px;
+    border-radius: 20px;
+    font: 14px 'YekanBakhBold';
+}
+
+.myzarinpal:hover{
+    background-color: rgb(232, 232, 215);
+}
+
+.under-menu{
+    position: relative;
+}
+
+.product-menu ul {
+    position: absolute;
+    top: 31px;
+    left: -146px;
+    width: 420px;
+    height: 219px;
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    padding: 15px 15px 25px;
+    display: none;
+}
+
+.product-menu:hover ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.product-menu ul li{
+    padding: 5px 10px 5px ;
+}
+
+.product-menu ul li:hover {
+    background-color: rgba(232,239,254,.6);
+    border-radius: 5px;
+}
+
+.container-product p:first-child{
+    font: 14px 'YekanBakhBold';
+    color: #303030;
+}
+
+.container-product p:first-child:hover{
+    color: #28457b;
+}
+
+.container-product p:last-child{
+    font: 10px;
+}
+
+.more-menu ul {
+    position: absolute;
+    top: 31px;
+    right: -20px;
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    width: 123px;
+    padding: 20px 0 10px;
+    display: none;
+}
+
+.more-menu:hover ul{
+    display: block;
+}
+
+.more-menu ul li{
+    padding-right: 25px;
+}
+
+.more-menu ul li:hover{
+    background-color: rgba(232,239,254,.6);
+}
+
+.more-menu li a{
+    padding: 10px 0;
+    display: block;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+/* banner */
+
+.container-banner{
+    position: relative;
+    z-index: -1;
+}
+
+.banner{
+    background-image: linear-gradient(135deg,#21254e,#2b4a83);
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 50px 20px ;
+    margin-top: 30px;
+    border-radius: 25px;
+}
+
+.banner-right , .banner-left{
+    width: 50%;
+}
+
+.banner-right h3{
+    color: white;
+    font: 32px 'YekanBakhHeavy';
+    margin-bottom: 20px;
+}
+
+.banner-right p{
+    color: white;
+    font: 18px 'YekanBakhMedium';
+    line-height: 50px;
+    width: 500px;
+    margin-bottom: 30px;
+}
+
+.container-regisetrs{
+    display: flex;
+}
+
+.share-register{
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.container-regisetrs a:first-child{
+    background: linear-gradient(270deg,#ffd900,#ffe422);
+    margin-left: 15px;
+    font: 16px 'YekanBakhBold';
+}
+
+.container-regisetrs a:last-child{
+    color: #fff;
+    background: #435a8a 0 0 ;
+    font: 14px 'YekanBakhBold';
+}
+
+.banner-left img{
+    width:500px;
+    height: 534px;
+}
+
+
+.go-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -39px;
+    right: calc(50% - 82px)
+}
+
+.go-down div{
+    background: url(../images/arrowbottom.svg);
+    width: 164px;
+    height: 78px;
+}
+
+.link-go__down img{
+    width: 15px;
+    position: absolute;
+    bottom: 43px;
+    right: 75px;
+}
+
+/* cards & payment */
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.card-text{
+    margin-top: 40px;
+    width: 50%;
+}
+
+.card-text h2:first-of-type{
+    color: #747480;
+    font: 22px 'YekanBakhMedium';
+    text-align: justify;
+}
+
+.card-text h2:last-of-type , .property h2{
+    color: #303030;
+    font: 32px 'YekanBakhHeavy';
+    margin: 10px 0;
+}
+
+.card-text p{
+    line-height: 40px;
+    width: 500px;
+    font-family: 'YekanBakhMedium';
+    font-size: 16px;
+    border-bottom: 1px solid #cdced0;
+    padding-bottom: 20px;
+    color: #303030;
+}
+
+.share-links{
+    display: flex;
+    margin-top: 20px;
+}
+
+.link{
+    padding: 8px 15px;
+    font:14px 'iranyekanwebmedium';
+    border-radius: 10px;
+}
+
+.right-link{
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422) ;
+    margin-left: 10px;
+    color: #000;
+}
+
+.left-link{
+    background-color: rgba(232,239,254,.6);
+    color: #28457b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    font-size: 14px;
+    margin-right: 10px;
+    color: #28457b;
+    margin-top: 5px;
+}
+
+.payment-img{
+    width: 463px;
+    height: 483px;
+}
+
+/* zarinlink */
+
+.social-img{
+    width: 680px;
+    height: 530px;
+}
+
+/* zarincard */
+
+.zarincard .card-text , .tashim .card-text , .zarinplus .card-text{
+    margin-top: 0;
+}
+
+/* tashim */
+
+.payout-img{
+    width: 596px;
+    height: 400px;
+}
+
+.tashim p{
+    width: 455px;
+}
+
+/* .properties */
+
+.properties { 
+    margin: 120px 0 50px;
+} 
+
+.properties{
+    display: flex;
+}
+
+.property{
+    width: 40%;
+}
+
+.property p{
+    line-height: 40px;
+    max-width: 311px;
+    font-family: 'YekanBakhMedium';
+    font-size: 16px;
+    color: #303030;
+}
+
+.property p::first-line{
+    word-spacing: 10px;
+}
+
+.options{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.option-topright{
+    border-left: 1px solid #cdced0;
+    border-bottom: 1px solid #cdced0;
+}
+
+.option-bottomleft{
+    border-right: 1px solid #cdced0;
+    border-top: 1px solid #cdced0;
+}
+
+.option-topright , .option-bottomright{
+    padding: 20px 5px 1px 38px;
+}
+
+.option-topleft , .option-bottomleft{
+    padding: 20px 41px 35px 18px;
+}
+
+.container-option__title{
+    display: flex;
+    align-items: center;
+}
+
+.option h2{
+    font: 24px 'YekanBakhHeavy';
+}
+
+.option img{
+    width: 60px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.option p{
+    line-height: 35px;
+    font-family: 'YekanBakhMedium';
+    font-size: 16px;
+    color: #303030;
+    margin-top: 20px;
+}
+
+/* start */
+
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
+    border-radius: 20px;
+    border: 1px solid #cdced0;
+}
+
+.start h1{
+    font: 28px 'YekanBakhHeavy';
+}
+
+.start p{
+    font: 22px 'YekanBakhmedium';
+    color: #747480;
+    margin: 15px 0;
+}
+
+.start a{
+    padding: 8px 15px;
+    font:14px 'iranyekanwebmedium';
+    border-radius: 10px;
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422) ;
+    color: #000;
+}
+
+/* footer */
+
+.support{
+    background: #fbf6f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 33px;
+    padding: 20px 30px;
+    margin: 50px 0;
+}
+
+.support > p{
+    font: 24px 'YekanBakhHeavy';
+}
+
+.support span:first-child{
+    margin: 0 15px;
+}
+
+.support span:last-child{
+    color: #21457f;
+    margin-right: 10px;
+}
+
+.req-support{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 24px 'YekanBakhBold';
+    color: #21457f;
+
+}
+
+.req-support i{
+    font-size: 12px;
+    margin: 0 10px 2px 0;
+}
+
+/* links-footer */
+
+.footer{
+    display: flex;
+}
+
+.footer-links{
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+}
+
+.footer h3{
+    font: 20px 'YekanBakhHeavy';
+    margin-bottom: 20px;
+}
+
+.footer h3:hover{
+    color: #21457f;
+}
+
+.footer-links a{
+    display: block;
+    font-size: 16px ;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.communications{
+    width: 33%;
+}
+
+.communication{
+    display: flex;
+}
+
+.communication a{
+    background-color: #eff4fe;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+.communication a:hover{
+    background-color: #fff;
+}
+
+.year{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    margin-top: 50px;
+}
+
+/* bell */
+
+.bell{
+    background-color: rgb(10, 98, 213);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+@media (max-width:1199px){
+    .container{
+        width: 940px;
+    }
+
+    header{
+        padding: 25px 10px 7px 20px;
+    }
+    
+    .menu-header{
+        margin-left: 50px;
+    }
+    
+
+    .banner{
+        padding: 40px 20px 80px;
+    }
+
+    .banner-right p{
+        width: 432px;
+    }
+
+    .banner-left img{
+        width: 430px;
+        height: 474px;
+    }
+
+    main section.payment{
+        margin-top: 140px;
+    }
+
+    .cards{
+        padding-right: 9px;
+    }
+
+    .card-text h2:first-of-type{
+        font-size: 30px;
+    }
+
+    .card-text h2:last-of-type , .property h2{
+        font-size: 30px;
+    }
+
+    .card-text p{
+        width: 440px;
+    }
+
+    .payment-img{
+        width: 502px;
+        height: 518px;
+    }
+
+    .social-img{
+        width: 500px;
+        height: 423px;
+    }
+
+    .tashim p{
+        width: 373px;
+    }
+
+    .payout-img{
+        width: 567px;
+    } 
+
+    .properties{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    .property{
+        width: 100%;
+    }
+
+    .property p{
+        max-width: 100%;
+        margin-top: 30px;
+    }
+
+    .property p::first-line{
+        word-spacing: -.5px;
+    }
+
+    .options{
+        width: 100%;
+        row-gap: 50px;
+        margin-top: 80px;
+    }
+
+    .option-bottomright{
+        grid-area: 1/2/2/3;
+    }
+
+    .option-topright , .option-bottomleft{
+        border: none;
+    }
+
+    .option-topright , .option-topleft{
+        padding: 0 35px 0 0;
+    }
+    
+    .option-bottomright , .option-bottomleft{
+        padding: 0 ;
+    }
+
+    .option p{
+        max-width: 308px;
+    }
+        
+}
+
+@media (max-width:991px){
+    .container{
+        width: 100%;
+    }
+
+    header{
+        padding: 20px 50px 15px 40px;
+    }
+
+    .menu-header > li {
+        margin-right: 25px;
+    }
+
+    .myzarinpal{
+        display: none;
+    }
+
+    .menu-header{
+        margin-left: 30px;
+    }
+
+    .banner{
+        margin: 30px 30px 0;
+        padding: 40px 20px 85px;
+        /* width: calc(100% - 60px); */
+    } 
+
+    .banner-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .banner-right h3{
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .banner-right p{
+        width: 100%;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .banner-left{
+        display: none;
+    }
+
+    .cards{
+        flex-direction: column;
+        margin: 20px 30px 0;
+        /* width: calc(100% - 60px); */
+    }
+
+    .card-text{
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .card-text h2:first-of-type , .property h2{
+        font-size: 26px;
+    }
+
+    .card-text h2:last-of-type{
+        font-size: 26px;
+        margin: 5px 0;
+    }
+
+    .card-text p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .share-links{
+        margin-top: 37px;
+    }
+
+    .zarincard .card-text , .zarinplus .card-text{
+        margin-top: 20px;
+    }
+
+    .tashim{
+        margin-top: 100px;
+    }
+
+    .card-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .payment-img{
+        height: 483px;
+    }
+
+    .social-img{
+        width: 557px;
+        height: 480px;
+    }
+
+    .zarincard-img{
+        width: 420px;
+        height: 274px;
+    }
+
+    .tashim p{
+        width: 100%;
+    }
+
+    .payout-img{
+        width: 556px;
+    }
+
+    .zarinplus-img{
+        width: 556px;
+        height: 290px;
+    }
+
+    .properties{
+        margin: 70px 30px 50px;
+        padding-right: 7px;
+    }
+
+    .options{
+        margin-top: 100px;
+        grid-template-columns: repeat(2,350px);
+    }
+
+    .option-topright , .option-topleft{
+        padding: 0 35px 0 0;
+    }
+    
+    .option-bottomright , .option-bottomleft{
+        padding: 0 ;
+    }
+
+    .start , .footer{
+        margin: 0 30px;
+    }
+
+    .support{
+        margin:50px 30px;
+    }
+    
+    .support p{
+        font-size: 19px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer-links , .communications{
+        width: 100%;
+    }
+
+    .communications h3 {
+        margin-bottom: 30px;
+    }
+
+    .communication a:first-child{
+        margin-right: 0;
+    }
+}
+
+@media (max-width:767px){
+
+    header{
+        padding: 20px 28px 15px 14px;
+    }
+
+    header > nav , .payout-img , .zarinplus-img{
+        display: none;
+    }
+
+    .menu-hamburger{
+        display: block;
+    }
+
+    .menu-hamburger > img{
+        width: 27px;
+    }
+
+    .nav-hamburger{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -292px; 
+        background-color: #fff;
+        transition: .5s;
+    }
+
+    .menu-hamburger:hover .nav-hamburger{
+        top:0;
+    }
+
+    .nav-hamburger div:first-child{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cross-icon{
+        width: 20px;
+        height: 20px;
+        margin: 25px 0 0 25px;
+    }
+
+    .nav-hamburger ul{
+        padding: 0 30px 0 75px;
+    }
+
+    .nav-hamburger ul li{
+        margin: 15px 0;
+    } 
+
+    .menu-hambuerger__item li:nth-of-type(2){
+        border-bottom: 1px solid #dfe1e4;
+        padding-bottom: 15px;
+    }
+
+    .nav-hamburger .menu-hamburger__link{
+        color: #000;
+        font-size: 16px;
+    }
+
+    .nav-hamburger div:last-child{
+        background-color: #eee;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .my-zarinpal {
+        color: #28457b;
+        font-size: 16px;
+    }
+
+    .banner , .start{
+        margin:0 10px ;
+    }
+
+    main section.payment {
+        margin-top: 80px;
+    }
+
+    .cards{
+        margin: 0 70px;
+    }
+
+    .card-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .card-text p{
+        font-size: 14px;
+    }
+
+    .payment-img {
+        height: 543px;
+        width: 463px;
+        flex-shrink: 0;
+    }
+
+    .social-img{
+        width: 452px;
+        height: 423px;
+    }
+
+    .zarincard-img{
+        width: 417px;
+        height: 383px;
+    }
+
+    .tashim , .zarinlink , .zarinplus{
+        margin-top: 50px;
+    }
+
+    .properties {
+        margin: 140px 30px 150px;
+        padding-right: 0;
+    }
+
+    .property{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 40px;
+        width: calc(100% - 80px);
+    }
+
+    .property p {
+        margin-top: 10px;
+    }
+
+    .options{
+        margin-top: 140px;
+        grid-template-columns: repeat(auto-fill,minmax(243px,314px));
+    }
+
+    .option-topright , .option-topleft{
+        padding: 0 ;
+    }
+
+    .start h1 {
+        font-size: 25px;
+    }
+
+    .start p {
+        font-size: 19px;
+    }
+
+    .support{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+    }
+
+    .support > p{
+        margin-right: 20px;
+    }
+
+    .req-support{
+        background: #fbf6f1;
+        padding: 5px 20px;
+        margin-top: 16px;
+        border-radius: 245px;
+    }
+
+    .footer-links{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-links ul, .communications{
+        padding-right: 55px;
+    }
+}
+
+@media (max-width:575px){
+
+    .banner-right div:first-child{
+        align-self: flex-start;
+    }
+
+    .banner-right h3{
+        font-size: 20px;
+        text-align: right;
+    }
+
+    .banner-right p {
+        font-size: 16px;
+    }
+
+    .card-img{
+        display: none;
+    }
+
+    .payment .card-text{
+        margin-top: 50px;
+    }
+
+    .card-text h2:first-of-type{
+        font-size: 24px;
+    }
+
+    .card-text h2:last-of-type{
+        font-size: 24px;
+        align-self: flex-start;
+    }
+
+    .card-text p , .property p{
+        text-align: justify;
+    }
+
+    .zarincard{
+        margin-top: 50px;
+    }
+
+    .properties {
+        margin: 140px 30px 80px;
+        padding-right: 0;
+    }
+
+    .options {
+        margin-top: 60px;
+        grid-template-columns: 1fr;
+        grid-auto-rows:auto ;
+        justify-items: center;
+    }
+
+    .option-bottomright{
+        grid-area: auto;
+    }
+
+    .container-option__title h2{
+        font-size: 20px;
+    }
+
+    .start h1 {
+        font-size: 19px;
+    }
+
+    .start p{
+        font-size: 16px;
+    }
+
+    .start a{
+        font-size: 15px;
+    }
+
+    footer {
+        border-top: 1px solid #dfe1e4;
+        margin-top: 52px;
+    }
+
+    .support{
+        margin: 50px 0;
+        align-items: center;
+    }
+
+    .support p{
+        font-size: 14px;
+    }
+
+    .support > p{
+        text-align: center;
+    }
+
+    .support span:last-child{
+        font-size: 16px;
+    }
+
+    .footer-links{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .footer-links ul{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .communications{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        margin: 20px 0;
+    }
+}

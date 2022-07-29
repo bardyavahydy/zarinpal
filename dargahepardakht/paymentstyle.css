@@ -1,0 +1,972 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'iranyekanwebmedium',Arial, Helvetica, sans-serif;
+    letter-spacing: -0.5px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+header{
+    background-color: rgb(255, 255, 255,.3);
+    backdrop-filter: blur(20px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px 7px;
+    position: sticky;
+    top: -6px;
+    transition: .5s ease-out;
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+}
+
+.menu-header{
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.menu-header > li{
+    margin-right: 35px;
+}
+
+.menu-header a{
+    color: #303030;
+    font: 14px 'YekanBakhMedium';
+}
+
+.fa-angle-down{
+    color: #303030;
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.myzarinpal{
+    display: block;
+    color: #28457b;
+    background-color: rgba(232,239,254,.6);
+    padding: 10px 27px;
+    border-radius: 20px;
+    font: 14px 'YekanBakhBold';
+}
+
+.myzarinpal:hover{
+    background-color: rgb(232, 232, 215);
+}
+
+.under-menu{
+    position: relative;
+}
+
+.product-menu ul {
+    position: absolute;
+    top: 31px;
+    left: -146px;
+    width: 420px;
+    height: 219px;
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    padding: 15px 15px 25px;
+    display: none;
+}
+
+.product-menu:hover ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    row-gap: 15px;
+    column-gap: 15px;
+}
+
+.product-menu ul li{
+    padding: 5px 10px 5px ;
+}
+
+.product-menu ul li:hover {
+    background-color: rgba(232,239,254,.6);
+    border-radius: 5px;
+}
+
+.container-product p:first-child{
+    font: 14px 'YekanBakhBold';
+    color: #303030;
+}
+
+.container-product p:first-child:hover{
+    color: #28457b;
+}
+
+.container-product p:last-child{
+    font: 10px;
+}
+
+.more-menu ul {
+    position: absolute;
+    top: 31px;
+    right: -20px;
+    background-color: white;
+    box-shadow: 0 20px 40px 0 rgb(36 39 51 / 15%);
+    border-radius: 12px;
+    border-top: 5px solid #f8e88b;
+    width: 123px;
+    padding: 20px 0 10px;
+    display: none;
+}
+
+.more-menu:hover ul{
+    display: block;
+}
+
+.more-menu ul li{
+    padding-right: 25px;
+}
+
+.more-menu ul li:hover{
+    background-color: rgba(232,239,254,.6);
+}
+
+.more-menu li a{
+    padding: 10px 0;
+    display: block;
+}
+
+.menu-hamburger{
+    display: none;
+}
+
+/* banner */
+
+.container-banner{
+    position: relative;
+    z-index: -1;
+}
+
+.banner{
+    background-color: #f1f5fe;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 60px 30px;
+    margin: 30px 0 140px;
+    border-radius: 25px;
+}
+
+.banner-right{
+    margin-top: 60px;
+}
+
+.banner-right h3:first-child{
+    font: 24px 'YekanBakhHeavy';
+    color: #303030;
+}
+
+.banner-right h3:last-child{
+    font: 32px 'YekanBakhHeavy';
+    color: #303030;
+    margin: 15px 0;
+}
+
+.banner-text{
+    font: 16px 'YekanBakhMedium';
+    color: #303030;
+    line-height: 40px;
+    width: 496px;
+    margin-bottom: 55px;
+    text-align: justify;
+}
+
+.container-make__payment a{
+    display: inline-block;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422);
+    color: #413805;
+}
+
+.banner-left img{
+    width: 510px;
+    height: 505px;
+}
+
+.go-down div{
+    background-image: url(../images/arrowbottom.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 78px;
+    position: absolute;
+    bottom: -38px;
+}
+
+.link-go__down img{
+    width: 15px;
+    position: absolute;
+    right: 49.45%;
+    bottom: 4px;
+}
+
+/* properties-payment */
+
+.properties-payment > h2{
+    font: 32px 'YekanBakhHeavy';
+    margin-bottom: 30px;
+}
+
+.properties{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: auto;
+    column-gap: 113px;
+    row-gap: 70px;
+    padding-right: 20px;
+}
+
+.container-property__title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.container-property__title img{
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+}
+
+.container-property__title h2{
+    font: 24px 'YekanBakhHeavy';
+    color: #303030;
+}
+
+.property p{
+    font:16px/35px 'YekanBakhMedium';
+    color: #303030;
+}
+
+/* tarefeh */
+
+.tarefeh{
+    background-color: #fbf6f1;
+    border-radius: 20px;
+    display: flex;
+    margin: 100px 0 50px ;
+}
+
+.tarefeh-text{
+    padding: 45px 60px 25px 0;
+}
+
+.tarefeh-text h2{
+    font: 24px 'YekanBakhHeavy';
+    color: #303030;
+}
+
+.tarefeh-text p{
+    font: 16px/35px 'YekanBakhMedium';
+    margin: 20px 0 35px;
+    text-align: justify;
+    line-height: 40px;
+    width: 540px;
+}
+
+.tarefeh-text a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    background-color: rgba(232,239,254,.6);
+    color: #28457b;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+
+.tarefeh-text i{
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.tarefeh img{
+    width: 563px;
+    height: 334px;
+}
+
+/* reasons */
+
+.container-reasons{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 70px;
+    margin: 80px 0 150px;
+}
+
+.reasons h1{
+    font: 32px 'YekanBakhHeavy';
+    color: #303030;
+}
+
+
+.reason{
+    display: flex;
+    align-items: center;
+}
+
+.reason img{
+    height: 60px;
+    width: 60px;
+    margin-left: 15px;
+    padding: 10px;
+    background-color: #eff4fe;
+    border-radius: 16px;
+}
+
+.reason h2{
+    font: 24px 'YekanBakhHeavy';
+    color: #303030;
+}
+
+.container-reasons .reason:nth-child(3) h2{
+    padding-left: 50px;
+}
+
+.reason h2 span{
+    font: 600 13px 'Roboto-Regular';
+}
+
+/* start */
+
+.start{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 45px 0;
+    border-radius: 20px;
+    border: 1px solid #cdced0;
+}
+
+.start h1{
+    font: 28px 'YekanBakhHeavy';
+}
+
+.start p{
+    font: 22px 'YekanBakhmedium';
+    color: #747480;
+    margin: 15px 0;
+}
+
+.start a{
+    padding: 8px 15px;
+    font:14px 'iranyekanwebmedium';
+    border-radius: 10px;
+    background: transparent linear-gradient(270deg,#ffd900,#ffe422) ;
+    color: #000;
+}
+
+/* footer */
+
+.support{
+    background: #fbf6f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 33px;
+    padding: 20px 30px;
+    margin: 50px 0;
+}
+
+.support > p{
+    font: 24px 'YekanBakhHeavy';
+}
+
+.support span:first-child{
+    margin: 0 15px;
+}
+
+.support span:last-child{
+    color: #21457f;
+    margin-right: 10px;
+}
+
+.req-support{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: 24px 'YekanBakhBold';
+    color: #21457f;
+
+}
+
+.req-support i{
+    font-size: 12px;
+    margin: 0 10px 2px 0;
+}
+
+/* links-footer */
+
+.footer{
+    display: flex;
+}
+
+.footer-links{
+    width: 67%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: auto;
+}
+
+.footer h3{
+    font: 20px 'YekanBakhHeavy';
+    margin-bottom: 20px;
+}
+
+.footer h3:hover{
+    color: #21457f;
+}
+
+.footer-links a{
+    display: block;
+    font-size: 16px ;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.communications{
+    width: 33%;
+}
+
+.communication{
+    display: flex;
+}
+
+.communication a{
+    background-color: #eff4fe;
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+}
+
+.communication a:hover{
+    background-color: #fff;
+}
+
+.year{
+    text-align: center;
+    font-size: 14px;
+    color: #000;
+    margin-top: 50px;
+}
+
+/* bell */
+
+.bell{
+    background-color: rgb(10, 98, 213);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+@media (max-width:1199px){
+    .container{
+        width: 940px;
+    }
+
+    header{
+        padding: 25px 10px 7px 20px;
+    }
+    
+    .menu-header{
+        margin-left: 50px;
+    }
+
+    .banner{
+        padding: 70px 60px 60px 0;
+    }
+
+    .banner-right{
+        margin-top: 0;
+    }
+
+    .banner-right h3:last-child {
+        margin: 10px 0;
+    }
+
+    .banner-text{
+        width: 377px;
+    }
+    
+    .banner-left{
+        margin-top: 49px;
+    }
+
+    .banner-left img{
+        width: 500px;
+        height: 435px;
+    }
+
+    .properties-payment > h2 {
+        font-size: 30px;
+    }
+
+    .properties{
+        /* grid-template-columns: minmax(315px,100px) minmax(308px,100px); */
+        grid-template-columns: 1fr 1fr;
+        padding-right: 0;
+        column-gap: 0;
+        row-gap: 40px;
+    }
+
+    .property p{
+        max-width: 317px;
+    }
+
+    .properties .property:nth-child(3){
+        grid-area: 3/1/4/2;
+    }
+
+    .properties .property:nth-child(4){
+        grid-area: 1/2/2/3;
+    }
+
+    .tarefeh{
+        overflow: hidden;
+    }
+    
+    .tarefeh-text h2 {
+        font: 30px 'YekanBakhHeavy';
+    }
+
+    .tarefeh-text p{
+        width: 406px;
+    }
+
+    .tarefeh img {
+        width: 430px;
+        height: 368px;
+        transform: scale(1.3);
+        margin-right: 74px;
+    }
+
+    .reasons h1 {
+        font-size: 30px ;
+    }
+
+    .reasons h2 {
+        font-size: 19px ;
+    }
+
+    .container-reasons{
+        row-gap: 50px;
+        margin: 50px 0 150px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width:991px){
+    .container{
+        width: 100%;
+    }
+
+    header{
+        padding: 20px 50px 15px 40px;
+    }
+
+    .menu-header > li {
+        margin-right: 25px;
+    }
+
+    .myzarinpal{
+        display: none;
+    }
+
+    .menu-header{
+        margin-left: 30px;
+    }
+
+    .banner{
+        margin: 30px 30px 140px;
+        padding: 140px 60px 100px;
+    }
+
+    .banner-text{
+        width: 100%;
+    }
+
+    .banner-left , .tarefeh img{
+        display: none;
+    }
+
+    .properties-payment{
+        margin: 0 30px;
+    }
+
+    .properties-payment > h2 {
+        margin-bottom: 90px;
+        font-size: 26px;
+    }
+
+    .container-property__title h2 {
+        font-size: 22px;
+    }
+
+    .tarefeh{
+        margin: 100px 30px 50px;
+    }
+
+    .tarefeh-text{
+        padding: 45px 60px 25px 72px;
+    }
+
+    .tarefeh-text h2{
+        font-size: 26px;
+    }
+
+    .tarefeh-text p {
+        width: 100%;
+    }
+
+    .reasons{
+        margin: 80px 30px 0;
+
+    }
+
+    .reasons h1 {
+        font-size: 26px;
+    }
+
+    .container-reasons{
+        grid-template-columns: 1fr 1fr;
+        padding-right: 0;
+    }
+
+    .container-reasons .reason:nth-child(4){
+        grid-area: 1/2/2/3;
+    }
+
+    .container-reasons .reason:nth-child(5){
+        grid-area: 2/2/3/3;
+    }
+
+    .reasons h2 {
+        font-size: 22px;
+    }
+
+    .container-reasons .reason:nth-child(3) h2{
+        padding-left: 0;
+    }
+
+    .start , .footer{
+        margin: 0 30px;
+    }
+
+    .support{
+        margin:50px 30px;
+    }
+    
+    .support p{
+        font-size: 19px;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+
+    .footer-links , .communications{
+        width: 100%;
+    }
+
+    .communications h3 {
+        margin-bottom: 30px;
+    }
+
+    .communication a:first-child{
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width:767px){
+
+    header{
+        padding: 20px 28px 15px 14px;
+    }
+
+    header > nav , .payout-img , .zarinplus-img{
+        display: none;
+    }
+
+    .menu-hamburger{
+        display: block;
+    }
+
+    .menu-hamburger > img{
+        width: 27px;
+    }
+
+    .nav-hamburger{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: -292px; 
+        background-color: #fff;
+        transition: .5s;
+    }
+
+    .menu-hamburger:hover .nav-hamburger{
+        top:0;
+    }
+
+    .nav-hamburger div:first-child{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .cross-icon{
+        width: 20px;
+        height: 20px;
+        margin: 25px 0 0 25px;
+    }
+
+    .nav-hamburger ul{
+        padding: 0 30px 0 75px;
+    }
+
+    .nav-hamburger ul li{
+        margin: 15px 0;
+    } 
+
+    .menu-hambuerger__item li:nth-of-type(2){
+        border-bottom: 1px solid #dfe1e4;
+        padding-bottom: 15px;
+    }
+
+    .nav-hamburger .menu-hamburger__link{
+        color: #000;
+        font-size: 16px;
+    }
+
+    .nav-hamburger div:last-child{
+        background-color: #eee;
+        padding: 20px 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .my-zarinpal {
+        color: #28457b;
+        font-size: 16px;
+    }
+
+    .banner {
+        margin: 30px 10px 140px;
+        padding: 80px 60px 100px;
+    }
+
+    .tarefeh {
+        margin: 100px 10px 50px;
+    }
+
+    .tarefeh-text {
+        padding: 45px 60px 25px;
+    }
+
+    .reasons {
+        margin: 80px 10px 0;
+    }
+
+    .reasons h2 {
+        font-size: 19px;
+    }
+
+    .start h1 {
+        font-size: 25px;
+    }
+
+    .start p {
+        font-size: 19px;
+    }
+
+    .support{
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #fff;
+    }
+
+    .support > p{
+        margin-right: 20px;
+    }
+
+    .req-support{
+        background: #fbf6f1;
+        padding: 5px 20px;
+        margin-top: 16px;
+        border-radius: 245px;
+    }
+
+    .footer-links{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-links ul, .communications{
+        padding-right: 55px;
+    }
+
+}
+
+@media (max-width:575px){
+
+    .banner {
+        padding: 20px 20px 60px;
+    }
+
+    .banner-right h3:first-child {
+        font-size: 22px;
+    }
+    
+    .banner-right h3:last-child {
+        text-align: center;
+        font-size: 20px ;
+        margin: 10px 0 20px;
+    }
+
+    .container-make__payment{
+        text-align: center;
+    }
+
+    .properties-payment {
+        margin: 0 60px;
+    }
+
+    .properties-payment > h2 {
+        margin-bottom: 15px;
+        font-size: 24px;
+    }
+
+    .properties {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .container-property__title h2 {
+        font-size: 24px;
+    }
+
+    .properties .property:nth-child(3), .properties .property:nth-child(4){
+        grid-area: auto;
+    }
+
+    .tarefeh-text{
+        padding: 25px;
+    }
+
+    .tarefeh-text h2 {
+        font-size: 24px;
+    }
+
+    .reasons h1 {
+        font-size: 24px;
+    }
+
+    .container-reasons {
+        grid-template-columns: 1fr;
+        padding-right: 20px;
+        margin: 50px 0 100px;
+    }
+
+    .container-reasons .reason:nth-child(4), .container-reasons .reason:nth-child(5) {
+        grid-area: auto;
+    }
+
+    .reasons h2 {
+        font-size: 20px;
+    }
+
+    .start {
+        margin: 0 10px;
+    }
+
+    .start h1 {
+        font-size: 19px;
+    }
+
+    .start p{
+        font-size: 16px;
+    }
+
+    .start a{
+        font-size: 15px;
+    }
+
+    footer {
+        border-top: 1px solid #dfe1e4;
+        margin-top: 52px;
+    }
+
+    .support{
+        margin: 50px 0;
+        align-items: center;
+    }
+
+    .support p{
+        font-size: 14px;
+    }
+
+    .support > p{
+        text-align: center;
+    }
+
+    .support span:last-child{
+        font-size: 16px;
+    }
+
+    .footer-links{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .footer-links ul{
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .communications{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0;
+        margin: 20px 0;
+    }
+
+}
