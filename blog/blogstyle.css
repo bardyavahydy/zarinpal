@@ -8,7 +8,6 @@ body{
     background-color: #f0eded;
     font-family: 'iranyekanwebmedium',Arial, Helvetica, sans-serif;
     letter-spacing: -0.5px;
-    /* position: relative; */
 }
 
 li{
@@ -46,7 +45,6 @@ header .container{
 }
 
 .container-hamburger{
-    /* background-color: lightgreen; */
     cursor: pointer;
     direction: ltr;
 }
@@ -74,7 +72,6 @@ header .container{
     color: rgba(0, 0, 0, .6);
     width: 28px;
     height: 28px;
-    /* background-color: rosybrown; */
     display: none; 
 }
 
@@ -100,7 +97,6 @@ header .container{
 
 .menu-hamburger > ul > li{
     cursor: pointer;
-    /* background-color: #fff; */
 }
 
 .menu-hamburger .hamburger-links{
@@ -109,7 +105,6 @@ header .container{
     color: rgba(0, 0, 0, .75);
     font: 14px 'iranyekanwebregular';
     font-weight: 500;
-    /* background-color: darkgoldenrod; */
 }
 
 .menu-hamburger > ul > li:hover > a{
@@ -148,7 +143,6 @@ header .container{
 }
 
 .navigation-bar .menu{
-    /* background-color: khaki; */
     display: flex;
 }
 
@@ -171,7 +165,6 @@ header .container{
 }
 
 .menu-education , .digital-currency{
-    /* background-color: violet; */
     position: absolute;
     top: 28px;
     right: -31px;
@@ -195,7 +188,6 @@ header .container{
     padding: 15px 20px;
     color: #000000bf;
     font: 14px 'YekanBakhMedium';
-    /* background-color: tan; */
 }
 
 .menu ul li:last-child a{
@@ -220,7 +212,6 @@ header .container{
 .update-education{
     display: flex;
     align-items: center;
-    /* background-color: tan; */
 }
 
 .hover{
@@ -228,7 +219,6 @@ header .container{
 }
 
 .container-img__insta{
-    /* background-color: fuchsia; */
     width: 65%;
 }
 
@@ -245,7 +235,6 @@ header .container{
 }
 
 .container-img__insta img{
-    /* width: 760px; */
     width: 100%;
     max-height: 456px;
 }
@@ -260,28 +249,19 @@ header .container{
 }
 
 .container-education__insta{
-    /* background-color: darkcyan; */
     width: 34%;
     margin-right: 15px;
-    /* transition: .9s; */
 }
 
 .container-education__insta > a{
     color: rgba(0, 0, 0, .5);
     font:500 16px 'iranyekanwebregular';
     transition: .6s;
-    /* background-color: turquoise; */
 }
 
 .container-education__insta > a:hover{
     color: #000;
 }
-
-/* .title-explore{
-    background-color: palegoldenrod;
-    z-index: -2;
-    position: relative;
-} */
 
 .title-explore{
     margin: 15px 0;
@@ -291,30 +271,11 @@ header .container{
     font: 33px 'YekanBakhheavy';
     line-height: 1.4;
     color: #000;
-    /* background-color: lightcoral; */
 }
-
-/* .title-explore a::after{
-    content: '';
-    display: inline-block;
-    width: 0;
-    height:60%;
-    position: absolute;
-    left: 0;
-    top: 20px;
-    z-index: -1;
-    background-color: rgba(128, 128, 128, 1);
-    transition: .6s;
-} */
-
-/* .update-education:hover .title-explore a::after{
-    width: 100%;
-} */
 
 .text-time , .post-info h5 a{
     color:rgba(0, 0, 0, .5);
     font: 500 13px 'iranyekanwebregular';
-    /* background-color: indianred; */
 }
 
 .text-time a{
@@ -337,17 +298,11 @@ header .container{
     background-color:rgba(0, 0, 0, .5);
     border-radius: 50%;
     margin: 0 10px;
-    /* background-color: indigo; */
 }
 
 .container-posts{
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(271.5px,1fr));
-    column-gap: 30px;*/
     margin: 40px 0 50px; 
     display: flex;
-    /* justify-content: space-between; */
-    /* background-color: indianred; */
 }
 
 .post:nth-child(2){
@@ -389,7 +344,6 @@ header .container{
     color: rgba(0, 0, 0, .8);
     font: 21px 'YekanBakhBold';
     line-height: 1.5;
-    /* background-color: cadetblue; */
 }
 
 /* chief editor */
@@ -400,7 +354,6 @@ header .container{
 }
 
 .selected {
-    /* background-color: aqua; */
     margin-bottom: 30px;
 }
 
@@ -423,14 +376,8 @@ header .container{
 .articles{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    /* grid-template-columns: repeat(auto-fit,minmax(197px,1fr)); */
     column-gap: 30px;
 }
-
-/* .article-img{
-    height: 165px;
-    height: 174px;
-} */
 
 .article-img img{
     width: 100%;
@@ -475,7 +422,6 @@ header .container{
     line-height: 1.5;
     display: block;
     max-width: 200px;
-    /* background-color: red; */
 }
 
 .article-text .text-time{
@@ -505,29 +451,18 @@ header .container{
 }
 
 .more-articles .container{
-    /* background-color: gray; */
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* grid-template-columns: repeat(auto-fit,minmax(267px,1fr)); */
-    gap: 35px;
-    /* display: flex;
-    flex-wrap: wrap; */
+    gap: 30px;
 }
 
-/* .container-more__article{
-    background-color: goldenrod;
-} */
-
 .more-article{
-    /* width: 364px; */
-    height: 219px;
-    /* background-color: violet; */
+    height: 218px;
 }
 
 .more-article img{
     width: 100%;
     height: 100%;
-    /* background-color: lightslategray; */
 }
 
 .container-more__article .more-article__text > a{
@@ -596,7 +531,6 @@ footer a{
 }
 
 .footer-links{
-    /* background-color: red; */
     display: flex;
 }
 
@@ -654,7 +588,6 @@ footer p::selection{
 
     .education{
         margin: 50px 24px 0 24px;
-        /* background-color: firebrick; */
     }
 
     .post-info p:nth-child(2) a {
@@ -672,11 +605,6 @@ footer p::selection{
     .more-articles .container{
         padding: 0 24px;
     }
-
-    /* .more-article{
-        max-height: 219px;
-        background-color: red;
-    } */
 
     footer{
         padding: 24px 30px 24px 50px;
@@ -743,7 +671,6 @@ footer p::selection{
     }
     
     .post{
-        /* background-color: olive; */
         width: 49%;
     }
     
@@ -781,7 +708,6 @@ footer p::selection{
 @media (max-width:759px){
     .education {
         margin: 12px 10px 0 ;
-        /* background-color: orangered; */
     }
 
     .update-education{
@@ -796,7 +722,6 @@ footer p::selection{
     .container-education__insta{
         width: 100%;
         width: calc(100% - 15px);
-        /* background-color: orchid; */
     }
     
     .post-info h5 a::before{
@@ -821,7 +746,6 @@ footer p::selection{
 
     .article-text p:nth-child(even) a {
         max-width: 100%;
-        /* background-color: red; */
     }
 
     .container-more__article .more-article__text > a:first-child::before {
@@ -851,16 +775,17 @@ footer p::selection{
 
     .post{
         display: flex;
-        width: 100%;
+        width: calc(100% - 15px);
+        margin-right: 15px;
         height: 166px;
     }
 
     .post:nth-child(2) {
-        margin: 70px 0 ;
+        margin: 70px 15px 70px 0 ;
     }
 
     .post .container-hover , .post:last-of-type .container-hover{
-        width: 30%;
+        width: 163px;
         flex-shrink: 0;
         align-self: stretch;
     }
@@ -870,12 +795,20 @@ footer p::selection{
         align-self: center;
     }
 
+    .post:nth-child(3) .post-info {
+        margin: 0 ;
+    }
+
     .post-info p{
         margin: 5px 10px 10px 0;
     }
 
     .articles{
         grid-template-columns: 1fr;
+    }
+
+    .article:not(:last-child){
+        margin-bottom: 20px;
     }
 
     .more-articles .container{
@@ -904,9 +837,7 @@ footer p::selection{
     .container-more__article .more-article__text p {
         margin: 5px 0 10px 0;
     }
-}
 
-@media (max-width:599px){
     .container-footer{
         align-items: center;
     }
