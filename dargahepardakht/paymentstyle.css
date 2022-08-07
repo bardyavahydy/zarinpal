@@ -486,6 +486,11 @@ header > nav {
 
 /* bell */
 
+.container-bell{
+    background-color: red;
+    position: relative;
+}
+
 .bell{
     background-color: rgb(10, 98, 213);
     width: 50px;
@@ -494,6 +499,31 @@ header > nav {
     position: fixed;
     left: 20px;
     bottom: 20px;
+}
+
+.container-bell p{
+    border-radius: 5px;
+    color: #fff;
+    background: #303030;
+    font-size: 12px;
+    padding: 26px 6px 6px;
+    position: fixed;
+    left: 85px;
+    bottom: 30px;
+    visibility: hidden;
+}
+
+.container-bell p::before{
+    content: '';
+    border: 12px solid;
+    border-color:transparent #303030 transparent transparent ;
+    position: absolute;
+    top: 12px;
+    left:-24px;
+}
+
+.bell:hover ~ p{
+    visibility: visible;
 }
 
 @media (max-width:1199px){
