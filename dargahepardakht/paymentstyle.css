@@ -33,6 +33,7 @@ header{
     position: sticky;
     top: -6px;
     transition: .5s ease-out;
+    z-index: 2;
 }
 
 header > nav {
@@ -158,11 +159,6 @@ header > nav {
 
 /* banner */
 
-.container-banner{
-    position: relative;
-    z-index: -1;
-}
-
 .banner{
     background-color: #f1f5fe;
     display: flex;
@@ -210,6 +206,10 @@ header > nav {
     height: 505px;
 }
 
+.go-down{
+    position: relative;
+}
+
 .go-down div{
     background-image: url(../images/arrowbottom.svg) ;
     background-repeat: no-repeat;
@@ -217,14 +217,14 @@ header > nav {
     width: 100%;
     height: 78px;
     position: absolute;
-    bottom: -38px;
+    bottom: 101px;
 }
 
 .link-go__down img{
     width: 15px;
     position: absolute;
-    right: 49.45%;
-    bottom: 4px;
+    right: 49.1%;
+    bottom: 145px;
 }
 
 /* properties-payment */
@@ -654,6 +654,11 @@ header > nav {
 
     .banner-left , .tarefeh img{
         display: none;
+    }
+
+    .go-down div{
+        margin: 0 30px;
+        width: calc(100% - 60px);
     }
 
     .properties-payment{
